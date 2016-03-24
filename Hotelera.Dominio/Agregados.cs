@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 //libreria
 
 namespace Hotelera.Dominio
-    //ejm
+    //ejmm
 {
     public class Agregados
     {

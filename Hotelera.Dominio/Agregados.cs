@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-libreria
+//libreria
 
 namespace Hotelera.Dominio
+    //ejm
 {
     public class Agregados
     {

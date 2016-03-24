@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class Habitacion
+    public class Habitacion
     {
         public int ID_Habitacion { get; set; }
         public int Numero_Habitacion { get; set; }
@@ -26,24 +26,24 @@ namespace Hotelera.Dominio
                 Estado_Habitacion = estado_habit
             };
         }
-        public static Habitacion Modificar(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
+        public void Modificar(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {
-            return new Habitacion()
-            {
-                ID_Habitacion = id_habit,
-                Numero_Habitacion = num_hab,
-                Numero_Piso = num_piso,
-                Descripcion_Habitacion = descrip_habit,
-                Tipo_Habitacion = tip_hab,
-                Estado_Habitacion = estado_habit
-            };
+            //return new Habitacion()
+            //{
+            ID_Habitacion = id_habit;
+            Numero_Habitacion = num_hab;
+            Numero_Piso = num_piso;
+            Descripcion_Habitacion = descrip_habit;
+            Tipo_Habitacion = tip_hab;
+            Estado_Habitacion = estado_habit;
+            //};
         }
-        public static Habitacion Eliminar(int id_habit)
+        public void Eliminar(int id_habit)
         {
-            return new Habitacion()
-            {
-                ID_Habitacion = id_habit
-            };
+            //return new Habitacion()
+            //{
+                ID_Habitacion = id_habit;
+            //};
         }
     }
 }

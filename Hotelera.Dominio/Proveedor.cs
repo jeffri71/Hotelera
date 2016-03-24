@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class Proveedor
+    public class Proveedor
     {
         public int ID_Proveedor { get; set; }
         public string Nombre_Proveedor { get; set; }
@@ -22,22 +22,22 @@ namespace Hotelera.Dominio
                 Telefono_Proveedor = telef_pro
             };
         }
-        public static Proveedor Modificar(int id_prov,string nomb_pro, string direc_pro, string telef_pro)
+        public void Modificar(int id_prov,string nomb_pro, string direc_pro, string telef_pro)
         {
-            return new Proveedor()
-            {
-                ID_Proveedor = id_prov,
-                Nombre_Proveedor = nomb_pro,
-                Direccion_Proveedor = direc_pro,
-                Telefono_Proveedor = telef_pro
-            };
+            //return new Proveedor()
+            //{
+            ID_Proveedor = id_prov;
+            Nombre_Proveedor = nomb_pro;
+            Direccion_Proveedor = direc_pro;
+            Telefono_Proveedor = telef_pro;
+            //};
         }
-        public static Proveedor Eliminar(int id_prov)
+        public void Eliminar(int id_prov)
         {
-            return new Proveedor()
-            {
-                ID_Proveedor = id_prov
-            };
+           // return new Proveedor()
+          //  {
+                ID_Proveedor = id_prov;
+        //};
         }
     }
 }

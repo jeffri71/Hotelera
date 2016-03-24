@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class Inventario
+    public class Inventario
     {
         public int ID_Inventario { get; set; }
         public virtual Proveedor ID_Pro { get; set; }
@@ -20,21 +20,21 @@ namespace Hotelera.Dominio
                 Estado_Inventario = estado_inv
             };
         }
-        public static Inventario Modificar(int id_inven,Proveedor id_prov, string estado_inv)
+        public void Modificar(int id_inven,Proveedor id_prov, string estado_inv)
         {
-            return new Inventario()
-            {
-                ID_Inventario = id_inven,
-                ID_Pro = id_prov,
-                Estado_Inventario = estado_inv
-            };
+           // return new Inventario()
+           // {
+            ID_Inventario = id_inven;
+            ID_Pro = id_prov;
+            Estado_Inventario = estado_inv;
+            // };
         }
-        public static Inventario Eliminar(int id_inven)
+        public void Eliminar(int id_inven)
         {
-            return new Inventario()
-            {
-                ID_Inventario = id_inven
-            };
+            //return new Inventario()
+           // {
+                ID_Inventario = id_inven;
+            // };
         }
     }
 }

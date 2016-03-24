@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class Personal
+    public class Personal
     {
         public int ID_Personal { get; set; }
         public string Nombre_Personal { get; set; }
@@ -32,27 +32,27 @@ namespace Hotelera.Dominio
                 ID_Cargo = id_carg
             };
         }
-        public static Personal Modificar(int id_pers,string nomb_pers, string ape_pers, string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg)
+        public void Modificar(int id_pers,string nomb_pers, string ape_pers, string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg)
         {
-            return new Personal()
-            {
-                ID_Personal = id_pers,
-                Nombre_Personal = nomb_pers,
-                Apellido_Personal = ape_pers,
-                Genero_Personal = gen_pers,
-                DNI_Personal = dni_pers,
-                Telefono_Personal = telef_pers,
-                Email_Personal = email_pers,
-                Direccion_Personal = direc_pers,
-                ID_Cargo = id_carg
-            };
+            //return new Personal()
+            //{
+                ID_Personal = id_pers;
+            Nombre_Personal = nomb_pers;
+            Apellido_Personal = ape_pers;
+            Genero_Personal = gen_pers;
+            DNI_Personal = dni_pers;
+            Telefono_Personal = telef_pers;
+            Email_Personal = email_pers;
+            Direccion_Personal = direc_pers;
+            ID_Cargo = id_carg;
+            // };
         }
-        public static Personal Eliminar(int id_pers)
+        public void Eliminar(int id_pers)
         {
-            return new Personal()
-            {
-                ID_Personal = id_pers
-            };
+            //return new Personal()
+           // {
+                ID_Personal = id_pers;
+            //};
         }
     }
 }

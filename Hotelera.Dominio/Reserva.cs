@@ -41,16 +41,16 @@ namespace Hotelera.Dominio
             /*return new Reserva()
             {*/
             ID_Reserva = id_reserv;
-                ID_Habitacion = id_hab,
-                ID_Cliente = id_client,
-                ID_Usuario = id_usu,
-                ID_TipoReserva = id_tipreserv,
-                ID_MedioReserva = id_medioreserv,
-                Estado_Reserva = estado_reserv,
-                Fecha_Reserva = fecha_reserv,
-                Fecha_IngresoReserva = fecha_ingreso,
-                Fecha_SalidaReserva = fecha_salida,
-                ID_Agregados = id_agregad
+            ID_Habitacion = id_hab;
+            ID_Cliente = id_client;
+            ID_Usuario = id_usu;
+            ID_TipoReserva = id_tipreserv;
+            ID_MedioReserva = id_medioreserv;
+                Estado_Reserva = estado_reserv;
+            Fecha_Reserva = fecha_reserv;
+            Fecha_IngresoReserva = fecha_ingreso;
+            Fecha_SalidaReserva = fecha_salida;
+            ID_Agregados = id_agregad;
             //};
         }
         public void Eliminar(int id_reserv)

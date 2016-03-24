@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class TipoReserva
+    public class TipoReserva
     {
         public int ID_TipoReserva { get; set; }
         public string Nombre_TipoReserva { get; set; }
@@ -18,20 +18,20 @@ namespace Hotelera.Dominio
                 Nombre_TipoReserva = nomb_tiporeserva
             };
         }
-        public static TipoReserva Modificar(int id_tiporeserva,string nomb_tiporeserva)
+        public void Modificar(int id_tiporeserva,string nomb_tiporeserva)
         {
-            return new TipoReserva()
-            {
-                ID_TipoReserva = id_tiporeserva,
-                Nombre_TipoReserva = nomb_tiporeserva
-            };
+            //return new TipoReserva()
+            //{
+            ID_TipoReserva = id_tiporeserva;
+            Nombre_TipoReserva = nomb_tiporeserva;
+            // };
         }
-        public static TipoReserva Eliminar(int id_tiporeserva)
+        public void Eliminar(int id_tiporeserva)
         {
-            return new TipoReserva()
-            {
-                ID_TipoReserva = id_tiporeserva
-            };
+            //return new TipoReserva()
+            //{
+                ID_TipoReserva = id_tiporeserva;
+            //};
         }
     }
 }

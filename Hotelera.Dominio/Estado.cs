@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class Estado
+    public class Estado
     {
         public int ID_Estado { get; set; }
         public string Nombre_Estado { get; set; }
@@ -18,20 +18,20 @@ namespace Hotelera.Dominio
                 Nombre_Estado = nomb_estad
             };
         }
-        public static Estado Modificar(int id_est, string nomb_estad)
+        public void Modificar(int id_est, string nomb_estad)
         {
-            return new Estado()
-            {
-                ID_Estado = id_est,
-                Nombre_Estado = nomb_estad
-            };
+            //return new Estado()
+           //
+            ID_Estado = id_est;
+            Nombre_Estado = nomb_estad;
+            //;
         }
-        public static Estado Eliminar(int id_est)
+        public void Eliminar(int id_est)
         {
-            return new Estado()
-            {
-                ID_Estado = id_est  
-            };
+           //eturn new Estado()
+           //
+                ID_Estado = id_est;
+            //;
         }
     }
 }

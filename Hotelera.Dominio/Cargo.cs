@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    class Cargo
+    public class Cargo
     {
         public int ID_Cargo { get; private set; }
         public string Nombre_Cargo { get; private set; }
@@ -22,22 +22,22 @@ namespace Hotelera.Dominio
                 Sueldo_Cargo = sueld
             };
         }
-        public static Cargo Modificar(int id_carg,string nomb_carg, string descrip_carg, decimal sueld)
+        public void Modificar(int id_carg,string nomb_carg, string descrip_carg, decimal sueld)
         {
-            return new Cargo()
+            //return new Cargo()
             {
-                ID_Cargo = id_carg,
-                Nombre_Cargo = nomb_carg,
-                Descripcion_Cargo = descrip_carg,
-                Sueldo_Cargo = sueld
-            };
+            ID_Cargo = id_carg;
+            Nombre_Cargo = nomb_carg;
+            Descripcion_Cargo = descrip_carg;
+            Sueldo_Cargo = sueld;
+            }
         }
-        public static Cargo Eliminar(int id_carg)
+        public void Eliminar(int id_carg)
         {
-            return new Cargo()
-            {
-                ID_Cargo = id_carg
-            };
+           // return new Cargo()
+           // {
+                ID_Cargo = id_carg;
+            // };
         }
     }
 }

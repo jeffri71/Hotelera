@@ -11,7 +11,7 @@ namespace Hotelera.PruebasUnitarias
         public void TestMethod1()
         {
             var lo_reserva = Reserva.Guardar(null,null,null,null,null,null,DateTime.Now, DateTime.Now, DateTime.Now, null);
-            lo_reserva.Eliminar(1);
+            //lo_reserva.Eliminar(1);
         }
     }
 }

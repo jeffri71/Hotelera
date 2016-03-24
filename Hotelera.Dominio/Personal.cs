@@ -17,8 +17,9 @@ namespace Hotelera.Dominio
         public string Email_Personal { get; set; }
         public string Direccion_Personal { get; set; }
         public virtual Cargo ID_Cargo { get; set; }
+        public string Estado_Personal { get; set; }
 
-        public static Personal Guardar(string nomb_pers, string ape_pers,string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg)
+        public static Personal Guardar(string nomb_pers, string ape_pers,string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg,string estado_pers)
         {
             return new Personal()
             {
@@ -29,14 +30,13 @@ namespace Hotelera.Dominio
                 Telefono_Personal = telef_pers,
                 Email_Personal = email_pers,
                 Direccion_Personal = direc_pers,
-                ID_Cargo = id_carg
+                ID_Cargo = id_carg,
+                Estado_Personal = estado_pers
             };
         }
-        public void Modificar(int id_pers,string nomb_pers, string ape_pers, string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg)
+        public void Modificar(int id_pers,string nomb_pers, string ape_pers, string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg, string estado_pers)
         {
-            //return new Personal()
-            //{
-                ID_Personal = id_pers;
+            ID_Personal = id_pers;
             Nombre_Personal = nomb_pers;
             Apellido_Personal = ape_pers;
             Genero_Personal = gen_pers;
@@ -45,14 +45,11 @@ namespace Hotelera.Dominio
             Email_Personal = email_pers;
             Direccion_Personal = direc_pers;
             ID_Cargo = id_carg;
-            // };
+            Estado_Personal = estado_pers;
         }
-        public void Eliminar(int id_pers)
+        public void Eliminar()
         {
-            //return new Personal()
-           // {
-                ID_Personal = id_pers;
-            //};
+            Estado_Personal = "INACTIVO";
         }
     }
 }

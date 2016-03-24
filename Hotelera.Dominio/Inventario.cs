@@ -22,19 +22,13 @@ namespace Hotelera.Dominio
         }
         public void Modificar(int id_inven,Proveedor id_prov, string estado_inv)
         {
-           // return new Inventario()
-           // {
             ID_Inventario = id_inven;
             ID_Pro = id_prov;
             Estado_Inventario = estado_inv;
-            // };
         }
-        public void Eliminar(int id_inven)
+        public void Eliminar()
         {
-            //return new Inventario()
-           // {
-                ID_Inventario = id_inven;
-            // };
+            Estado_Inventario = "ELIMINADO";
         }
     }
 }

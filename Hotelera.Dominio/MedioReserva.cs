@@ -10,28 +10,25 @@ namespace Hotelera.Dominio
     {
         public int ID_MedioReserva { get; set; }
         public string Nombre_Reserva { get; set; }
+        public string Estado_MedioReserva { get; set; }
 
-        public static MedioReserva Guardar(string nomb_reserv)
+        public static MedioReserva Guardar(string nomb_reserv, string estado_medioreserv)
         {
             return new MedioReserva()
             {
-                Nombre_Reserva = nomb_reserv
+                Nombre_Reserva = nomb_reserv,
+                Estado_MedioReserva = estado_medioreserv
             };
         }
-        public void Modificar(int id_medio,string nomb_reserv)
+        public void Modificar(int id_medio,string nomb_reserv, string estado_medioreserv)
         {
-           // return new MedioReserva()
-            //{
-            ID_MedioReserva = id_medio;
-            Nombre_Reserva = nomb_reserv;
-            // };
+           ID_MedioReserva = id_medio;
+           Nombre_Reserva = nomb_reserv;
+           Estado_MedioReserva = estado_medioreserv;
         }
-        public void Eliminar(int id_medio)
+        public void Eliminar()
         {
-           // return new MedioReserva()
-           // {
-                ID_MedioReserva = id_medio;
-            //};
+            Estado_MedioReserva = "ELIMINADO";
         }
     }
 }

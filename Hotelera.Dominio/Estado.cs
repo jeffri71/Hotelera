@@ -9,7 +9,7 @@ namespace Hotelera.Dominio
     public class Estado
     {
         public int ID_Estado { get; set; }
-        public string Nombre_Estado { get; set; }
+        public string Nombre_Estado { get; set; }        
 
         public static Estado Guardar(string nomb_estad)
         {
@@ -20,18 +20,12 @@ namespace Hotelera.Dominio
         }
         public void Modificar(int id_est, string nomb_estad)
         {
-            //return new Estado()
-           //
             ID_Estado = id_est;
             Nombre_Estado = nomb_estad;
-            //;
         }
         public void Eliminar(int id_est)
         {
-           //eturn new Estado()
-           //
-                ID_Estado = id_est;
-            //;
+           
         }
     }
 }

@@ -28,10 +28,7 @@ namespace Hotelera.Dominio
         }
         public void Eliminar(int id_tiporeserva)
         {
-            //return new TipoReserva()
-            //{
-                ID_TipoReserva = id_tiporeserva;
-            //};
+            
         }
     }
 }

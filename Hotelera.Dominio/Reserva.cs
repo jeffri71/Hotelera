@@ -36,29 +36,22 @@ namespace Hotelera.Dominio
                 ID_Agregados = id_agregad
             };
         }
-        public void Modificar(int id_reserv,Habitacion id_hab, Cliente id_client, Usuario id_usu, TipoReserva id_tipreserv, MedioReserva id_medioreserv, string estado_reserv, DateTime fecha_reserv, DateTime fecha_ingreso, DateTime fecha_salida, Agregados id_agregad)
+        public void Modificar(Habitacion id_hab, Cliente id_client, Usuario id_usu, TipoReserva id_tipreserv, MedioReserva id_medioreserv, string estado_reserv, DateTime fecha_reserv, DateTime fecha_ingreso, DateTime fecha_salida, Agregados id_agregad)
         {
-            /*return new Reserva()
-            {*/
-            ID_Reserva = id_reserv;
             ID_Habitacion = id_hab;
             ID_Cliente = id_client;
             ID_Usuario = id_usu;
             ID_TipoReserva = id_tipreserv;
             ID_MedioReserva = id_medioreserv;
-                Estado_Reserva = estado_reserv;
+            Estado_Reserva = estado_reserv;
             Fecha_Reserva = fecha_reserv;
             Fecha_IngresoReserva = fecha_ingreso;
             Fecha_SalidaReserva = fecha_salida;
             ID_Agregados = id_agregad;
-            //};
         }
-        public void Eliminar(int id_reserv)
+        public void Eliminar()
         {
-            /*return new Reserva()
-            {
-                ID_Reserva = id_reserv
-            };*/
+            Estado_Reserva = "ELIMINADO";            
         }
     }
 }

@@ -28,22 +28,16 @@ namespace Hotelera.Dominio
         }
         public void Modificar(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {
-            //return new Habitacion()
-            //{
             ID_Habitacion = id_habit;
             Numero_Habitacion = num_hab;
             Numero_Piso = num_piso;
             Descripcion_Habitacion = descrip_habit;
             Tipo_Habitacion = tip_hab;
             Estado_Habitacion = estado_habit;
-            //};
         }
-        public void Eliminar(int id_habit)
+        public void Estado()
         {
-            //return new Habitacion()
-            //{
-                ID_Habitacion = id_habit;
-            //};
+            Estado_Habitacion = "FUERA DE SERVICIO";
         }
     }
 }

@@ -12,32 +12,31 @@ namespace Hotelera.Dominio
         public string Nombre_Cargo { get; private set; }
         public string Descripcion_Cargo { get; private set; }
         public decimal Sueldo_Cargo { get; private set; }
+        public string Estado_Cargo { get; set; }
 
-        public static Cargo Guardar (string nomb_carg, string descrip_carg, decimal sueld)
+        public static Cargo Guardar (string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {
             return new Cargo()
             {
                 Nombre_Cargo = nomb_carg,
                 Descripcion_Cargo = descrip_carg,
-                Sueldo_Cargo = sueld
+                Sueldo_Cargo = sueld,
+                Estado_Cargo = estado_carg
             };
         }
-        public void Modificar(int id_carg,string nomb_carg, string descrip_carg, decimal sueld)
+        public void Modificar(int id_carg,string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {
-            //return new Cargo()
             {
             ID_Cargo = id_carg;
             Nombre_Cargo = nomb_carg;
             Descripcion_Cargo = descrip_carg;
             Sueldo_Cargo = sueld;
+            Estado_Cargo = estado_carg;
             }
         }
-        public void Eliminar(int id_carg)
+        public void Eliminar()
         {
-           // return new Cargo()
-           // {
-                ID_Cargo = id_carg;
-            // };
+            Estado_Cargo = "ELIMINADO";
         }
     }
 }

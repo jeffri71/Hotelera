@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Hotelera.Dominio.Cargo">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAgACAAEAIAAAAAAAAAAAAAABAAAAQA=</HashCode>
+      <FileName>Cargo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Estado">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAASAAAAACAAAAAAAQAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Estado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Personal">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAQAAAgACAAAAAgAAAAAADAAABEABAAAAAA=</HashCode>
+      <FileName>Personal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ID_Cargo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotelera.Dominio.Usuario">
+    <Position X="3.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAQAAAAACAAAAAAAwgAAAAAAAAAABgAAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="id_Personal" />
+      <Property Name="ID_Estado" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotelera.Dominio.Cliente">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAgAQAAAQBCAAAAAAAAAAAAAABAAAABAAAAAA=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Habitacion">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACQAAAAACQAAAACACAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Habitacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Inventario">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAgAKAAAAAAAAAAAAAAAAAAADAAAAAA=</HashCode>
+      <FileName>Inventario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ID_Pro" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotelera.Dominio.Proveedor">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQACAAACCAAAAAAAQAAAAAAAAAABAAQAAA=</HashCode>
+      <FileName>Proveedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Servicios">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAACAAAAAAIAAAAAAAACAAEDAAEAAA=</HashCode>
+      <FileName>Servicios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Reserva">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAUAAAQACIgAACCAAAAAAAAEAAAABAACAAE=</HashCode>
+      <FileName>Reserva.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ID_Habitacion" />
+      <Property Name="ID_Cliente" />
+      <Property Name="ID_Usuario" />
+      <Property Name="ID_TipoReserva" />
+      <Property Name="ID_MedioReserva" />
+      <Property Name="ID_Agregados" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotelera.Dominio.TipoReserva">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAACAAAAAAAAAAAAAAAAAAABAAAAAE=</HashCode>
+      <FileName>TipoReserva.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.MedioReserva">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAAAAACAAAACAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MedioReserva.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotelera.Dominio.Agregados">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQACAAAAAAAAAAAAAAAAAAABAAEAAA=</HashCode>
+      <FileName>Agregados.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ID_Servicios" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

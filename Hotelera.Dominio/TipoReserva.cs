@@ -8,8 +8,8 @@ namespace Hotelera.Dominio
 {
     public class TipoReserva
     {
-        public int ID_TipoReserva { get; set; }
-        public string Nombre_TipoReserva { get; set; }
+        public int ID_TipoReserva { get; private set; }
+        public string Nombre_TipoReserva { get; private set; }
 
         public static TipoReserva Guardar(string nomb_tiporeserva)
         {

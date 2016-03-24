@@ -8,9 +8,9 @@ namespace Hotelera.Dominio
 {
     public class MedioReserva
     {
-        public int ID_MedioReserva { get; set; }
-        public string Nombre_Reserva { get; set; }
-        public string Estado_MedioReserva { get; set; }
+        public int ID_MedioReserva { get; private set; }
+        public string Nombre_Reserva { get; private set; }
+        public string Estado_MedioReserva { get; private set; }
 
         public static MedioReserva Guardar(string nomb_reserv, string estado_medioreserv)
         {

@@ -9,11 +9,11 @@ namespace Hotelera.Dominio
     public class Proveedor
     {
         
-        public int ID_Proveedor { get; set; }
-        public string Nombre_Proveedor { get; set; }
-        public string Direccion_Proveedor { get; set; }
-        public string Telefono_Proveedor { get; set; }
-        public string Estado_Proveedor { get; set; }
+        public int ID_Proveedor { get; private set; }
+        public string Nombre_Proveedor { get; private set; }
+        public string Direccion_Proveedor { get; private set; }
+        public string Telefono_Proveedor { get; private set; }
+        public string Estado_Proveedor { get; private set; }
 
         public static Proveedor Guardar(string nomb_pro, string direc_pro, string telef_pro,string estado_provee)
         {

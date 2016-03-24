@@ -8,11 +8,11 @@ namespace Hotelera.Dominio
 {
     public class Servicios
     {
-        public int ID_Servicio { get; set; }
-        public string Nombre_Servicio { get; set; }     
-        public string Descripcion_Servicio { get; set; }
-        public decimal Precio_Servicio { get; set; }
-        public string Estado_Servicio { get; set; }
+        public int ID_Servicio { get; private set; }
+        public string Nombre_Servicio { get; private set; }     
+        public string Descripcion_Servicio { get; private set; }
+        public decimal Precio_Servicio { get; private set; }
+        public string Estado_Servicio { get; private set; }
         public static Servicios Guardar(string nomb_serv, string descrip_serv, decimal precio_serv, string estado_serv)
         {
             return new Servicios()

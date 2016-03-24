@@ -8,13 +8,13 @@ namespace Hotelera.Dominio
 {
     public class Cliente
     {
-        public int ID_Cliente { get; set; }
-        public string Nombre_Cliente { get; set; }
-        public string Apellido_Cliente { get; set; }
-        public int Documento_Cliente { get; set; }
-        public string Celular_Cliente { get; set; }
-        public string Email_Cliente { get; set; }
-        public string Estado_Cliente { get; set; }
+        public int ID_Cliente { get; private set; }
+        public string Nombre_Cliente { get; private set; }
+        public string Apellido_Cliente { get; private set; }
+        public int Documento_Cliente { get; private set; }
+        public string Celular_Cliente { get; private set; }
+        public string Email_Cliente { get; private set; }
+        public string Estado_Cliente { get; private set; }
 
         public static Cliente Guardar(string nomb_cli, string ape_cli, int doc_cli, string cel_cli, string email_cli,string estado_cli)
         {

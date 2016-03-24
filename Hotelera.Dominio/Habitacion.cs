@@ -8,12 +8,12 @@ namespace Hotelera.Dominio
 {
     public class Habitacion
     {
-        public int ID_Habitacion { get; set; }
-        public int Numero_Habitacion { get; set; }
-        public int Numero_Piso { get; set; }
-        public string Descripcion_Habitacion { get; set; }
-        public string Tipo_Habitacion { get; set; }
-        public string Estado_Habitacion { get; set; }
+        public int ID_Habitacion { get; private set; }
+        public int Numero_Habitacion { get; private set; }
+        public int Numero_Piso { get; private set; }
+        public string Descripcion_Habitacion { get; private set; }
+        public string Tipo_Habitacion { get; private set; }
+        public string Estado_Habitacion { get; private set; }
 
         public static Habitacion Guardar(int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {

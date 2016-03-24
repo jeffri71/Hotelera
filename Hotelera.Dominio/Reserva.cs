@@ -8,17 +8,17 @@ namespace Hotelera.Dominio
 {
     public class Reserva
     {
-        public int ID_Reserva { get; set; }
-        public virtual Habitacion ID_Habitacion { get; set; }
-        public virtual Cliente ID_Cliente { get; set; }
-        public virtual Usuario ID_Usuario { get; set; }
-        public virtual TipoReserva ID_TipoReserva { get; set; }
-        public virtual MedioReserva ID_MedioReserva { get; set; }
-        public string Estado_Reserva { get; set; }
-        public DateTime Fecha_Reserva { get; set; }
-        public DateTime Fecha_IngresoReserva { get; set; }
-        public DateTime Fecha_SalidaReserva { get; set; }
-        public virtual Agregados ID_Agregados { get; set; }
+        public int ID_Reserva { get; private set; }
+        public virtual Habitacion ID_Habitacion { get; private set; }
+        public virtual Cliente ID_Cliente { get; private set; }
+        public virtual Usuario ID_Usuario { get; private set; }
+        public virtual TipoReserva ID_TipoReserva { get; private set; }
+        public virtual MedioReserva ID_MedioReserva { get; private set; }
+        public string Estado_Reserva { get; private set; }
+        public DateTime Fecha_Reserva { get; private set; }
+        public DateTime Fecha_IngresoReserva { get; private set; }
+        public DateTime Fecha_SalidaReserva { get; private set; }
+        public virtual Agregados ID_Agregados { get; private set; }
 
         public static Reserva Guardar(Habitacion id_hab, Cliente id_client,Usuario id_usu,TipoReserva id_tipreserv, MedioReserva id_medioreserv,string estado_reserv,DateTime fecha_reserv, DateTime fecha_ingreso, DateTime fecha_salida, Agregados id_agregad)
         {

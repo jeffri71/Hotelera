@@ -8,11 +8,11 @@ namespace Hotelera.Dominio
 {
     public class Usuario
     {
-        public int ID_usu { get; set; }
-        public virtual Personal id_Personal { get; set; }
-        public string Nombre_Usuario { get; set; }
-        public string Contraseña_Usuario { get; set; }
-        public virtual Estado ID_Estado { get; set; }
+        public int ID_usu { get; private set; }
+        public virtual Personal id_Personal { get; private set; }
+        public string Nombre_Usuario { get; private set; }
+        public string Contraseña_Usuario { get; private set; }
+        public virtual Estado ID_Estado { get; private set; }
 
         // HOLAMUNDO
 

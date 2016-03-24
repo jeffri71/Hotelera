@@ -8,9 +8,9 @@ namespace Hotelera.Dominio
 {
     public class Inventario
     {
-        public int ID_Inventario { get; set; }
-        public virtual Proveedor ID_Pro { get; set; }
-        public string Estado_Inventario { get; set; }
+        public int ID_Inventario { get; private set; }
+        public virtual Proveedor ID_Pro { get; private set; }
+        public string Estado_Inventario { get; private set; }
 
         public static Inventario Guardar(Proveedor id_prov,string estado_inv)
         {

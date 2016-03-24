@@ -10,9 +10,9 @@ namespace Hotelera.Dominio
 {
     public class Agregados
     {
-        public int ID_Agregados { get; set; }
-        public virtual Servicios ID_Servicios { get; set; }
-        public string Estado_Servicios { get; set; }
+        public int ID_Agregados { get; private set; }
+        public virtual Servicios ID_Servicios { get; private set; }
+        public string Estado_Servicios { get; private set; }
 
         public static Agregados Guardar(Servicios id_serv,string estado_serv)
         {

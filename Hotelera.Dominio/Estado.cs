@@ -8,8 +8,8 @@ namespace Hotelera.Dominio
 {
     public class Estado
     {
-        public int ID_Estado { get; set; }
-        public string Nombre_Estado { get; set; }        
+        public int ID_Estado { get; private set; }
+        public string Nombre_Estado { get; private set; }        
 
         public static Estado Guardar(string nomb_estad)
         {

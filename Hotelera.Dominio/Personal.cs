@@ -8,16 +8,16 @@ namespace Hotelera.Dominio
 {
     public class Personal
     {
-        public int ID_Personal { get; set; }
-        public string Nombre_Personal { get; set; }
-        public string Apellido_Personal { get; set; }
-        public string Genero_Personal { get; set; }
-        public int DNI_Personal { get; set; }
-        public string Telefono_Personal { get; set; }
-        public string Email_Personal { get; set; }
-        public string Direccion_Personal { get; set; }
-        public virtual Cargo ID_Cargo { get; set; }
-        public string Estado_Personal { get; set; }
+        public int ID_Personal { get; private set; }
+        public string Nombre_Personal { get; private set; }
+        public string Apellido_Personal { get; private set; }
+        public string Genero_Personal { get; private set; }
+        public int DNI_Personal { get; private set; }
+        public string Telefono_Personal { get; private set; }
+        public string Email_Personal { get; private set; }
+        public string Direccion_Personal { get; private set; }
+        public virtual Cargo ID_Cargo { get; private set; }
+        public string Estado_Personal { get; private set; }
 
         public static Personal Guardar(string nomb_pers, string ape_pers,string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg,string estado_pers)
         {

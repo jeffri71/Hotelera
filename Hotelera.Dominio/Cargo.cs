@@ -12,7 +12,7 @@ namespace Hotelera.Dominio
         public string Nombre_Cargo { get; private set; }
         public string Descripcion_Cargo { get; private set; }
         public decimal Sueldo_Cargo { get; private set; }
-        public string Estado_Cargo { get; set; }
+        public string Estado_Cargo { get; private set; }
 
         public static Cargo Guardar (string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {

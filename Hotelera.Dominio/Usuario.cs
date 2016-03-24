@@ -14,6 +14,8 @@ namespace Hotelera.Dominio
         public string Contraseña_Usuario { get; set; }
         public virtual Estado ID_Estado { get; set; }
 
+        // HOLAMUNDO
+
         public static Usuario Guardar(Personal id_pers, string nomb_usu, string contra_usu, Estado id_estad)
         {
             return new Usuario()

@@ -8,7 +8,7 @@ namespace Hotelera.Dominio
 {
     public class Proveedor
     {
-        public int variablepruebacambio
+        
         public int ID_Proveedor { get; set; }
         public string Nombre_Proveedor { get; set; }
         public string Direccion_Proveedor { get; set; }

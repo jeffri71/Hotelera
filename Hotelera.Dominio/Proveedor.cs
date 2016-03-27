@@ -15,7 +15,7 @@ namespace Hotelera.Dominio
         public string Telefono_Proveedor { get; private set; }
         public string Estado_Proveedor { get; private set; }
 
-        public static Proveedor Guardar(string nomb_pro, string direc_pro, string telef_pro,string estado_provee)
+        public static Proveedor agregarProveedor(string nomb_pro, string direc_pro, string telef_pro,string estado_provee)
         {
             return new Proveedor()
             {
@@ -25,7 +25,7 @@ namespace Hotelera.Dominio
                 Estado_Proveedor = estado_provee
             };
         }
-        public void Modificar(int id_prov,string nomb_pro, string direc_pro, string telef_pro, string estado_provee)
+        public void actualizarProveedor(int id_prov,string nomb_pro, string direc_pro, string telef_pro, string estado_provee)
         {
             ID_Proveedor = id_prov;
             Nombre_Proveedor = nomb_pro;
@@ -33,7 +33,7 @@ namespace Hotelera.Dominio
             Telefono_Proveedor = telef_pro;
             Estado_Proveedor = estado_provee;            
         }
-        public void Eliminar()
+        public void anularProveedor()
         {
             Estado_Proveedor = "INACTIVO";
         }

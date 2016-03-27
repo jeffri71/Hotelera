@@ -12,7 +12,7 @@ namespace Hotelera.Dominio
         public virtual Proveedor ID_Pro { get; private set; }
         public string Estado_Inventario { get; private set; }
 
-        public static Inventario Guardar(Proveedor id_prov,string estado_inv)
+        public static Inventario agregarArticulo(Proveedor id_prov,string estado_inv)
         {
             return new Inventario()
             {
@@ -20,13 +20,13 @@ namespace Hotelera.Dominio
                 Estado_Inventario = estado_inv
             };
         }
-        public void Modificar(int id_inven,Proveedor id_prov, string estado_inv)
+        public void actualizarArticulo(int id_inven,Proveedor id_prov, string estado_inv)
         {
             ID_Inventario = id_inven;
             ID_Pro = id_prov;
             Estado_Inventario = estado_inv;
         }
-        public void Eliminar()
+        public void eliminarArticulo()
         {
             Estado_Inventario = "ELIMINADO";
         }

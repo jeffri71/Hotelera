@@ -19,7 +19,7 @@ namespace Hotelera.Dominio
         public virtual Cargo ID_Cargo { get; private set; }
         public string Estado_Personal { get; private set; }
 
-        public static Personal Guardar(string nomb_pers, string ape_pers,string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg,string estado_pers)
+        public static Personal agregarPersonal(string nomb_pers, string ape_pers,string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg,string estado_pers)
         {
             return new Personal()
             {
@@ -34,7 +34,7 @@ namespace Hotelera.Dominio
                 Estado_Personal = estado_pers
             };
         }
-        public void Modificar(int id_pers,string nomb_pers, string ape_pers, string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg, string estado_pers)
+        public void actualizarPersonal(int id_pers,string nomb_pers, string ape_pers, string gen_pers, int dni_pers, string telef_pers, string email_pers, string direc_pers, Cargo id_carg, string estado_pers)
         {
             ID_Personal = id_pers;
             Nombre_Personal = nomb_pers;
@@ -47,7 +47,7 @@ namespace Hotelera.Dominio
             ID_Cargo = id_carg;
             Estado_Personal = estado_pers;
         }
-        public void Eliminar()
+        public void anularPersonal()
         {
             Estado_Personal = "INACTIVO";
         }

@@ -16,7 +16,7 @@ namespace Hotelera.Dominio
         public string Email_Cliente { get; private set; }
         public string Estado_Cliente { get; private set; }
 
-        public static Cliente Guardar(string nomb_cli, string ape_cli, int doc_cli, string cel_cli, string email_cli,string estado_cli)
+        public static Cliente agregarCliente(string nomb_cli, string ape_cli, int doc_cli, string cel_cli, string email_cli,string estado_cli)
         {
             return new Cliente()
             {
@@ -28,7 +28,7 @@ namespace Hotelera.Dominio
                 Estado_Cliente = estado_cli
             };
         }
-        public void Modificar(int id_cli,string nomb_cli, string ape_cli, int doc_cli, string cel_cli, string email_cli, string estado_cli)
+        public void actualizarCliente(int id_cli,string nomb_cli, string ape_cli, int doc_cli, string cel_cli, string email_cli, string estado_cli)
         {
             ID_Cliente = id_cli;
             Nombre_Cliente = nomb_cli;
@@ -38,7 +38,7 @@ namespace Hotelera.Dominio
             Email_Cliente = email_cli;
             Estado_Cliente = estado_cli;
         }
-        public void Eliminar()
+        public void eliminarCliente()
         {
             Estado_Cliente = "INACTIVO";
         }

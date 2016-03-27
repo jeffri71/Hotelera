@@ -16,7 +16,7 @@ namespace Hotelera.Dominio
 
         // HOLAMUNDO
 
-        public static Usuario Guardar(Personal id_pers, string nomb_usu, string contra_usu, Estado id_estad)
+        public static Usuario agregarUsuario(Personal id_pers, string nomb_usu, string contra_usu, Estado id_estad)
         {
             return new Usuario()
             {
@@ -26,7 +26,7 @@ namespace Hotelera.Dominio
                 ID_Estado = id_estad
             };
         }
-        public void Modificar(int id_us,Personal id_pers, string nomb_usu, string contra_usu, Estado id_estad)
+        public void actualizarUsuario(int id_us,Personal id_pers, string nomb_usu, string contra_usu, Estado id_estad)
         {
             ID_usu = id_us;
             id_Personal = id_pers;
@@ -34,7 +34,7 @@ namespace Hotelera.Dominio
             Contraseña_Usuario = contra_usu;
             ID_Estado = id_estad;
         }
-        public void Eliminar()
+        public void eliminarUsuario()
         {
        
         }

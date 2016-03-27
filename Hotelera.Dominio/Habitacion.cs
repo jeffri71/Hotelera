@@ -15,7 +15,7 @@ namespace Hotelera.Dominio
         public string Tipo_Habitacion { get; private set; }
         public string Estado_Habitacion { get; private set; }
 
-        public static Habitacion Guardar(int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
+        public static Habitacion agregarHabitacion(int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {
             return new Habitacion()
             {
@@ -26,7 +26,7 @@ namespace Hotelera.Dominio
                 Estado_Habitacion = estado_habit
             };
         }
-        public void Modificar(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
+        public void actualizarHabitacion(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {
             ID_Habitacion = id_habit;
             Numero_Habitacion = num_hab;
@@ -35,7 +35,8 @@ namespace Hotelera.Dominio
             Tipo_Habitacion = tip_hab;
             Estado_Habitacion = estado_habit;
         }
-        public void Estado()
+        //de este metodo no estoy seguro
+        public void anularHabitacion()
         {
             Estado_Habitacion = "FUERA DE SERVICIO";
         }

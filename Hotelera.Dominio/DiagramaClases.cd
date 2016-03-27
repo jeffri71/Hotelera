@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Hotelera.Dominio.Cargo">
-    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Position X="0.5" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAgACAAEAIAAAAAAAAAAAAAABAAAAQA=</HashCode>
+      <HashCode>AAAAAEAAAAAAAAgAAAAEAIAAAAAAAAAAAAAABAEAIQA=</HashCode>
       <FileName>Cargo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Estado">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="4" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAASAAAAACAAAAAAAQAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAACAAQIAAAAAAABAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estado.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Personal">
     <Position X="3.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAACAAQAAAQAAAgACAAAAAgAAAAAADAAABEABAAAAAA=</HashCode>
+      <HashCode>AAACAAQAAAAAAAgAAAAAAEgAAAAAADAAAJEEAAAABAA=</HashCode>
       <FileName>Personal.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -25,9 +25,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Usuario">
-    <Position X="3.5" Y="4.5" Width="1.75" />
+    <Position X="3.5" Y="5.25" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAQAAAAACAAAAAAAwgAAAAAAAAAABgAAAAA=</HashCode>
+      <HashCode>AAAIAAAAAAAgAAAAACAQAAAAwgAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -36,23 +36,23 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Cliente">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="5.5" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>ACAAAAQAgAQAAAQBCAAAAAAAAAAAAAABAAAABAAAAAA=</HashCode>
+      <HashCode>ACAAAAQAkAAAAAQDAAAAAQAAAAAAAAABAAAAAAAgAAA=</HashCode>
       <FileName>Cliente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Habitacion">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABACQAAAAACQAAAACACAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAABACAAAAAACQAAAADACAAgABAAAAAAAAAAAAA=</HashCode>
       <FileName>Habitacion.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Inventario">
-    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Position X="10.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAgAKAAAAAAAAAAAAAAAAAAADAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAoAIAAAAAAAAAAAAIAAAAAACAAAAAA=</HashCode>
       <FileName>Inventario.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -60,23 +60,23 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.Proveedor">
-    <Position X="11.5" Y="0.5" Width="1.5" />
+    <Position X="14" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQACAAACCAAAAAAAQAAAAAAAAAABAAQAAA=</HashCode>
+      <HashCode>ACAAAAAAAAAACAAAACAAAABAAQAABAAAAAAAAAAQABA=</HashCode>
       <FileName>Proveedor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Servicios">
-    <Position X="12.75" Y="3.25" Width="1.5" />
+    <Position X="13.5" Y="3.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAACAAAAAAIAAAAAAAACAAEDAAEAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAIAAAAAAAACAAECACUAAA=</HashCode>
       <FileName>Servicios.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Reserva">
-    <Position X="9.25" Y="5.75" Width="1.5" />
+    <Position X="10.5" Y="6" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAUAAAQACIgAACCAAAAAAAAEAAAABAACAAE=</HashCode>
+      <HashCode>AAAAAAQAAAEAQCQAAYgAACCAAAAAAAAEAAAAAAACAAE=</HashCode>
       <FileName>Reserva.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -89,23 +89,23 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Hotelera.Dominio.TipoReserva">
-    <Position X="5.5" Y="6.75" Width="1.5" />
+    <Position X="5" Y="7.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAQAAAAACAAAAAAAAAAAAAAAAAAABAAAAAE=</HashCode>
+      <HashCode>AIAAAAAAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAE=</HashCode>
       <FileName>TipoReserva.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.MedioReserva">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="7" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAYAAAAACAAAACAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAgAAAIAAACAAAABAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>MedioReserva.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Agregados">
-    <Position X="10.25" Y="3.25" Width="1.5" />
+    <Position X="10.5" Y="3.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAQACAAAAAAAAAAAAAAAAAAABAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAAAAEACAAAACAAAAAAAAAAQAEAAA=</HashCode>
       <FileName>Agregados.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

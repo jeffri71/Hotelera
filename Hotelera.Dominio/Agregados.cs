@@ -14,7 +14,7 @@ namespace Hotelera.Dominio
         public virtual Servicios ID_Servicios { get; private set; }
         public string Estado_Servicios { get; private set; }
 
-        public static Agregados Guardar(Servicios id_serv,string estado_serv)
+        public static Agregados agregarProducto(Servicios id_serv,string estado_serv)
         {
             return new Agregados()
             {
@@ -22,13 +22,13 @@ namespace Hotelera.Dominio
                 Estado_Servicios = estado_serv
             };
         }
-        public void Modificar(int id_agreg,Servicios id_serv, string estado_serv)
+        public void modificarProducto(int id_agreg,Servicios id_serv, string estado_serv)
         {
             ID_Agregados = id_agreg;
             ID_Servicios = id_serv;
             Estado_Servicios = estado_serv;
         }
-        public void Eliminar()
+        public void cancelarProducto()
         {
             Estado_Servicios = "ELIMINADO";
         }

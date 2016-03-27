@@ -11,14 +11,14 @@ namespace Hotelera.Dominio
         public int ID_TipoReserva { get; private set; }
         public string Nombre_TipoReserva { get; private set; }
 
-        public static TipoReserva Guardar(string nomb_tiporeserva)
+        public static TipoReserva agregarTipoDeReserva(string nomb_tiporeserva)
         {
             return new TipoReserva()
             {
                 Nombre_TipoReserva = nomb_tiporeserva
             };
         }
-        public void Modificar(int id_tiporeserva,string nomb_tiporeserva)
+        public void modificarTipoDeReserva(int id_tiporeserva,string nomb_tiporeserva)
         {
             //return new TipoReserva()
             //{
@@ -26,7 +26,7 @@ namespace Hotelera.Dominio
             Nombre_TipoReserva = nomb_tiporeserva;
             // };
         }
-        public void Eliminar(int id_tiporeserva)
+        public void eliminarTipoDeReserva(int id_tiporeserva)
         {
             
         }

@@ -15,7 +15,7 @@ namespace Hotelera.Dominio
         public string Tipo_Habitacion { get; private set; }
         public string Estado_Habitacion { get; private set; }
 
-        public static Habitacion Registrar_Habitacion(int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
+        public static Habitacion Registrar(int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {
             return new Habitacion()
             {
@@ -26,7 +26,7 @@ namespace Hotelera.Dominio
                 Estado_Habitacion = estado_habit
             };
         }
-        public void Actualizar_Datos(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
+        public void Actualizar(int id_habit, int num_hab, int num_piso, string descrip_habit, string tip_hab, string estado_habit)
         {
             ID_Habitacion = id_habit;
             Numero_Habitacion = num_hab;
@@ -36,7 +36,7 @@ namespace Hotelera.Dominio
             Estado_Habitacion = estado_habit;
         }
         
-        public void Cambio_Estado()
+        public void CambiarEstado()
         {
             Estado_Habitacion = "FUERA DE SERVICIO";
         }

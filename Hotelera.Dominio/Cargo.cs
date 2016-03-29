@@ -14,7 +14,7 @@ namespace Hotelera.Dominio
         public decimal Sueldo_Cargo { get; private set; }
         public string Estado_Cargo { get; private set; }
 
-        public static Cargo agregarCargo (string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
+        public static Cargo Registrar (string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {
             return new Cargo()
             {
@@ -24,7 +24,7 @@ namespace Hotelera.Dominio
                 Estado_Cargo = estado_carg
             };
         }
-        public void actualizarCargo(int id_carg,string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
+        public void Actualizar(int id_carg,string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {
             {
             ID_Cargo = id_carg;
@@ -34,7 +34,7 @@ namespace Hotelera.Dominio
             Estado_Cargo = estado_carg;
             }
         }
-        public void anularCargo()
+        public void Anular()
         {
             Estado_Cargo = "ELIMINADO";
         }

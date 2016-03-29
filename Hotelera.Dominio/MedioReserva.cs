@@ -12,7 +12,7 @@ namespace Hotelera.Dominio
         public string Nombre_Reserva { get; private set; }
         public string Estado_MedioReserva { get; private set; }
 
-        public static MedioReserva agregarMedioDeReserva(string nomb_reserv, string estado_medioreserv)
+        public static MedioReserva Registrar(string nomb_reserv, string estado_medioreserv)
         {
             return new MedioReserva()
             {
@@ -20,13 +20,13 @@ namespace Hotelera.Dominio
                 Estado_MedioReserva = estado_medioreserv
             };
         }
-        public void modificarMedioDeReserva(int id_medio,string nomb_reserv, string estado_medioreserv)
+        public void Actualizar(int id_medio,string nomb_reserv, string estado_medioreserv)
         {
            ID_MedioReserva = id_medio;
            Nombre_Reserva = nomb_reserv;
            Estado_MedioReserva = estado_medioreserv;
         }
-        public void anularMedioDeReserva()
+        public void Anular()
         {
             Estado_MedioReserva = "ELIMINADO";
         }

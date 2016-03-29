@@ -67,7 +67,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Hotelera.Dominio.Servicios">
-    <Position X="13.5" Y="3.5" Width="2.5" />
+    <Position X="15" Y="3.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAIAAAAAAAACAAECACUAAA=</HashCode>
       <FileName>Servicios.cs</FileName>
@@ -76,7 +76,7 @@
   <Class Name="Hotelera.Dominio.Reserva">
     <Position X="10.5" Y="6" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAEAQCQAAYgAACCAAAAAAAAEAAAAAAACAAE=</HashCode>
+      <HashCode>AAAAAAQAAAEAAAQAAIggBCCAAAAAAAAEAAAAgAACAAE=</HashCode>
       <FileName>Reserva.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

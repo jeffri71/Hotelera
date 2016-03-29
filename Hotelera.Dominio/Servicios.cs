@@ -13,7 +13,7 @@ namespace Hotelera.Dominio
         public string Descripcion_Servicio { get; private set; }
         public decimal Precio_Servicio { get; private set; }
         public string Estado_Servicio { get; private set; }
-        public static Servicios agregarServicio(string nomb_serv, string descrip_serv, decimal precio_serv, string estado_serv)
+        public static Servicios Anexar_Servicio(string nomb_serv, string descrip_serv, decimal precio_serv, string estado_serv)
         {
             return new Servicios()
             {
@@ -23,7 +23,7 @@ namespace Hotelera.Dominio
                 Estado_Servicio = estado_serv
             };
         }
-        public void modificarServicio(int id_serv,string nomb_serv, string descrip_serv, decimal precio_serv, string estado_serv)
+        public void Actualizar_Servicio(int id_serv,string nomb_serv, string descrip_serv, decimal precio_serv, string estado_serv)
         {
             ID_Servicio = id_serv;
             Nombre_Servicio = nomb_serv;
@@ -31,7 +31,7 @@ namespace Hotelera.Dominio
             Precio_Servicio = precio_serv;
             Estado_Servicio = estado_serv;
         }
-        public void cancelarServicio()
+        public void Anular_Servicio()
         {
             Estado_Servicio = "ELIMINADO";
         }

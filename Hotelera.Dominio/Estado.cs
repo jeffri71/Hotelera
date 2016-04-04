@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Hotelera.Dominio
 {
-    public class Estado
+    public class Estado_Usuario
     {
         public int ID_Estado { get; private set; }
         public string Nombre_Estado { get; private set; }        
 
-        public static Estado Registrar(string nomb_estad)
+        public static Estado_Usuario Registrar(string nomb_estad)
         {
-            return new Estado()
+            return new Estado_Usuario()
             {
                 Nombre_Estado = nomb_estad
             };

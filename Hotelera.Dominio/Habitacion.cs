@@ -40,5 +40,6 @@ namespace Hotelera.Dominio
         {
             Estado_Habitacion = "FUERA DE SERVICIO";
         }
+        public void verDisponibilidad() { }
     }
 }

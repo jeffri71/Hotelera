@@ -12,13 +12,15 @@ namespace Hotelera.PruebasUnitarias
         {
             //var lo_reserva = Reserva.Guardar(null,null,null,null,null,null,DateTime.Now, DateTime.Now, DateTime.Now, null);
             //lo_reserva.Eliminar(1);
-            Cliente objcliente = new Cliente(2, "normal", "Lucas", "Vasquez", "Masculino", "dni", "12345678", "052-455435", "luis.v@hotmail.com", "Ave Jorge Basade #123");
+            Cargo cargo = new Cargo(1,"Recepcionista","Encargado de la atencion del huesped",899,"aceptado");
+            Personal objempleado = new Personal(cargo,5, "normal", "Lucas", "Vasquez", "Masculino", "dni", "5555555", "052-455435", "luis.v@hotmail.com", "Ave Jorge Basade #123");
             using (var lo_contexto = new HoteleraContexto())
             {
-                lo_contexto.Clientes.Add(lo_cliente);
+                lo_contexto.Empleados.Add(objempleado);
+                lo_contexto.Cargos.Add(cargo);
                 lo_contexto.SaveChanges();
             }
-            Assert.IsTrue(lo_cliente.CodigoCliente == 1);
+            Assert.IsTrue(objempleado.ID_Personal == 5);
         }
     }
 }

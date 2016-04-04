@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotelera.Dominio", "Hoteler
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotelera.Infraestructura", "Hotelera.Infraestructura\Hotelera.Infraestructura.csproj", "{D45790FA-A0D6-4C29-91A7-5C49523C20B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotelera.PruebasUnitarias", "Hotelera.PruebasUnitarias\Hotelera.PruebasUnitarias.csproj", "{1FEA4A10-054C-4005-8536-2808B9312231}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotelera.Prueba", "Hotelera.PruebasUnitarias\Hotelera.Prueba.csproj", "{1FEA4A10-054C-4005-8536-2808B9312231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

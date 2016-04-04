@@ -58,6 +58,10 @@
       <Project>{920b6551-698b-4882-86c9-d0be46a5209c}</Project>
       <Name>Hotelera.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Hotelera.Infraestructura\Hotelera.Infraestructura.csproj">
+      <Project>{d45790fa-a0d6-4c29-91a7-5c49523c20b8}</Project>
+      <Name>Hotelera.Infraestructura</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

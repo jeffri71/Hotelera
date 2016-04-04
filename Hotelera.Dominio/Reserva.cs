@@ -20,7 +20,7 @@ namespace Hotelera.Dominio
         public DateTime Fecha_SalidaReserva { get; private set; }
         public virtual Agregados ID_Agregados { get; private set; }
         
-        public static Reserva Aperturar(Habitacion id_hab, Cliente id_client,Usuario id_usu,TipoReserva id_tipreserv, MedioReserva id_medioreserv,string estado_reserv,DateTime fecha_reserv, DateTime fecha_ingreso, DateTime fecha_salida, Agregados id_agregad)
+        public virtual Reserva Aperturar(Habitacion id_hab, Cliente id_client,Usuario id_usu,TipoReserva id_tipreserv, MedioReserva id_medioreserv,string estado_reserv,DateTime fecha_reserv, DateTime fecha_ingreso, DateTime fecha_salida, Agregados id_agregad)
         {
             return new Reserva()
             {

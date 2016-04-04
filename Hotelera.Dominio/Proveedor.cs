@@ -12,22 +12,19 @@ namespace Hotelera.Dominio
         public int ID_Proveedor { get; private set; }
         public string Estado_Proveedor { get; private set; }
 
-        public static Proveedor Registrar(string nomb_pro, string direc_pro, string telef_pro, string estado_provee)
+
+        public Proveedor(int id_pro, string estado_pro, string nombre_cli, string apel_cli, string gen_cli, string tipoDoc_cli,
+                                                            string nrDoc_cli, string tel_cli, string email_cli, string dir_cli) 
+                                                            :base( nombre_cli, apel_cli, gen_cli, tipoDoc_cli,
+                                                             nrDoc_cli,  tel_cli, email_cli, dir_cli)
         {
-            return new Proveedor()
-            {
-                Nombre_Proveedor = nomb_pro,
-                Direccion_Proveedor = direc_pro,
-                Telefono_Proveedor = telef_pro,
-                Estado_Proveedor = estado_provee
-            };
+            this.ID_Proveedor = id_pro;
+            this.Estado_Proveedor = estado_pro;
         }
-        public void Actualizar(int id_prov, string nomb_pro, string direc_pro, string telef_pro, string estado_provee)
+        public void Actualizar(int id_prov, string estado_provee)
         {
             ID_Proveedor = id_prov;
-            Nombre_Proveedor = nomb_pro;
-            Direccion_Proveedor = direc_pro;
-            Telefono_Proveedor = telef_pro;
+            
             Estado_Proveedor = estado_provee;
         }
         public void Anular()

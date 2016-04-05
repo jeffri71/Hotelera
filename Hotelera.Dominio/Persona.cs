@@ -24,7 +24,7 @@ namespace Hotelera.Dominio
         public Persona(string nombre_per, string apel_per,
                                         string gen_per, string tipoDoc_per, string nrDoc_per, string tel_per, string email_per, string dir_per)
         {
-            //aqui se 
+            //aqui se agregan los datos de la clase persona
             this.Nombre_Persona = nombre_per;
             this.Apellido_Persona = apel_per;
             this.Genero_Persona = gen_per;

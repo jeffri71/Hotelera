@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//asignamos las librerias que vamos a usar
 namespace Hotelera.Dominio
 {
     public class Cargo
     {
+        //creamos las variables de la clase cargo
+        //encapsulamos las variables con el private
         public int ID_Cargo { get; private set; }
         public string Nombre_Cargo { get; private set; }
         public string Descripcion_Cargo { get; private set; }
         public decimal Sueldo_Cargo { get; private set; }
         public string Estado_Cargo { get; private set; }
 
-        //Constructor
+        //construimos el Constructor
         public Cargo(int id_cargo, string nomb_cargo, string desc_cargo, decimal sueldo_cargo, string estado_cargo)
         {
             this.ID_Cargo = id_cargo;
@@ -28,6 +30,7 @@ namespace Hotelera.Dominio
         {
         }
 
+        //creamos el metodo o funcion de agregar en este caso REGISTRAR
         public static Cargo Registrar (int id_cargo,string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {
             return new Cargo()
@@ -39,6 +42,7 @@ namespace Hotelera.Dominio
                 Estado_Cargo = estado_carg
             };
         }
+        //creamos el metodo o funcion de modificar en este caso ACTUALIZAR
         public void Actualizar(int id_carg,string nomb_carg, string descrip_carg, decimal sueld,string estado_carg)
         {
             {
@@ -49,6 +53,7 @@ namespace Hotelera.Dominio
             Estado_Cargo = estado_carg;
             }
         }
+        //creamos el metodo o funcion de bloquear en este caso Anular
         public void Anular()
         {
             Estado_Cargo = "ELIMINADO";

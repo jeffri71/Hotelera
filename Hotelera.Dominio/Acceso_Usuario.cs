@@ -9,5 +9,10 @@ namespace Hotelera.Dominio
     {
         public int ID_AccesoUsuario { get; private set; }
         public string NombreAcceso { get; private set; }
+
+
+
+
+
     }
 }
